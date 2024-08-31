@@ -30,6 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up up PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9.9.0
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
