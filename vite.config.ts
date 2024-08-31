@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite';
+import { defineConfig, UserConfig } from 'vite';
 
 export default defineConfig({
+    base: '/browser-png-size-detection-benchmark/',
     server: {
         https: {
             key: '/home/fendy/.ssl/dev.key',
@@ -8,4 +9,4 @@ export default defineConfig({
         },
         port: 3001
     },
-});
+} as UserConfig);
