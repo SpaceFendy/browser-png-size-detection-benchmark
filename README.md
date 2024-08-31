@@ -1,7 +1,10 @@
 # JS File API - PNG Size Detection Benchmark
 This is a small benchmark to test a few approached to reading out the size of PNG files using the standard JS File API.
 
-## My results
+## Try it yourself
+You can open and run the benchmark yourself by simply opening [this Link](https://spacefendy.github.io/browser-png-size-detection-benchmark/).
+
+## Results
 
 I ran each test 4 times using a directory with a bunch of dumped textures from PPSSPP.
 
