@@ -44,12 +44,9 @@ $('#detect-sizes').addEventListener('click', async () => {
 
     // Run tests and collect output
     let output = '';
-    for (let i=4; i<testFns.length; i++) {
+    for (let i=0; i<testFns.length; i++) {
         const testFn = testFns[i];
         printOutput(`Running Test ${i + 1}/${testFns.length} [${testFn.name}]`);
-        if (i === 5) {
-            break;
-        }
 
         const start = performance.now();
 
