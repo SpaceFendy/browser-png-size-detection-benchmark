@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite + TS</title>
+    <style>
+        .row {
+            padding: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        .input-group {
+            margin-bottom: .5rem;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="row">
+        <h2>Setup</h2>
+        <div class="input-group">
+            <label class="input-group">
+                <span>Directory</span>
+                <input id="directory-input" type="text" disabled />
+            </label>
+            <button id="select-directory-button">Select Directory</button>
+        </div>
+        <div class="input-group">
+            <label class="input-group">
+                <span>Amount of times tests should be run</span>
+                <input id="amount-of-runs-input" type="number" value="1" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Actions</h2>
+        <button id="detect-sizes">Detect Sizes</button>
+    </div>
+    <div class="row">
+        <h2>Output:</h2>
+        <div id="output"></div>
+    </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
