@@ -4,8 +4,8 @@ export default defineConfig({
     base: '/browser-png-size-detection-benchmark/',
     server: {
         https: {
-            key: '/home/fendy/.ssl/dev.key',
-            cert: '/home/fendy/.ssl/dev.crt',
+            key: process.env['SSL_KEY'],
+            cert: process.env['SSL_CERT'],
         },
         port: 3001
     },

@@ -4,6 +4,33 @@ This is a small benchmark to test a few approached to reading out the size of PN
 ## Try it yourself
 You can open and run the benchmark yourself by simply opening [this Link](https://spacefendy.github.io/browser-png-size-detection-benchmark/).
 
+## Setup
+To set up the project, check it out, install the dependencies using PNPM:
+```bash
+pnpm i
+```
+
+Since the FileSystemAccessApi requires the page to be accessed through HTTPS, please locally set up a valid SSL certificate + key and set them for this project as env-variables.
+
+```
+SSL_KEY=<PATH TO YOUR SSL.key>
+SSL_CERT=<PATH TO YOUR SSL.crt/.pem>
+```
+
+Then simply run the project using:
+
+```bash
+pnpm run dev
+```
+
+## Build
+
+To build it use the build script:
+
+```bash
+pnpm run build
+```
+
 ## Results
 
 I ran each test 4 times using a directory with a bunch of dumped textures from PPSSPP.
